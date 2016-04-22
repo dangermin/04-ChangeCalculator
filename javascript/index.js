@@ -1,14 +1,3 @@
-var currencies = {
-	dollars: 1,
-	quarters: .25,
-	dime: .1,
-	nickels: .05,
-	pennies: .01,
-}
-
-var currency = Object.keys(currencies)
-
-
 function change() {
 	var dollarSwap = $("#totalGiven").val() - $("#totalSale").val();
 	$("#dollars").html(0);
@@ -54,26 +43,3 @@ function change() {
 		$("#pennies").html(pennies)
 	}
 }
-
-
-
-
-
-	// return $("#dollars").html(dollarSwap)
-
-
-
-
-// var $ = function (id) {
-// return document.getElementById(id);
-// }
-
-// var calculate_click = function ()
-// {
-// var dollarSwap = $("dollarSwap").value;
-
-// if (cents > .24){
-
-// window.onload = function () {
-// $("calculate").onclick = calculate_click;
-// } 
