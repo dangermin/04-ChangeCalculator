@@ -1,0 +1,76 @@
+<DOCTYPE html>
+
+<html>
+
+<head>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+
+	<title>Change Calculator</title>
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+	<!-- Optional theme -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+
+	<link type="text/css" rel="stylesheet" href="./css/style.css">
+	<script type="text/javascript" src="./javascript/index.js"></script>
+</head>
+
+<body>
+	<h1>Change Calculator</h1>
+	<br>
+	
+		<div class="inputRow">
+			<h3 class="salesBox">Sales Section</h3>
+			<div class="col-sm-6" class="inputBlock group">
+			  <label class="labels">Total Sale</label>
+			  <input class="input" type="text" id="totalSale"/>
+			</div>
+			<div class="col-sm-6" class="inputBlock group">
+			  <label class="labels">Amount Given</label>
+			  <input class="input" type="text" id="totalGiven"/>
+			</div>
+			<br>
+			<br>
+			<!-- Calculate Button -->
+			<div id="calc">
+				<!-- <input type="submit" id="calcSubmit" value="Calculate Change" > -->
+				<button onclick="change()">Calculate Change</button>
+			</div>
+		
+
+		<h3>Change Section</h3>
+		<div class="outputRow">		
+			<div class="col-sm-12" class="dollar group">
+				<div class="outputBlock group">
+				  <label class="labels">Dollars</label>
+				  <p class="output" type="text" id="dollars">0</p>
+				</div>
+			</div>
+			<div class="col-sm-6" class="change group">
+				<div class="outputBlock group">
+				  <label class="labels">Quarters</label>
+				  <p class="output" type="text" id="quarters">0</p>
+				</div><div class="outputBlock group">
+				  <label class="labels">Dimes</label>
+				  <p class="output" type="text" id="dimes">0</p>
+				</div>
+			</div>
+			<div class="col-sm-6" class="change group">
+				<div class="outputBlock group">
+				  <label class="labels">Nickels</label>
+				  <p class="output" type="text" id="nickels">0</p>
+				</div>
+				<div class="outputBlock group">
+				  <label class="labels">Pennies</label>
+				  <p class="output" type="text" id="pennies">0</p>
+			</div>	  
+			</div>
+			<!-- <div class="col-sm-6"> -->
+    		</div>
+		</div>
+
+</body>
